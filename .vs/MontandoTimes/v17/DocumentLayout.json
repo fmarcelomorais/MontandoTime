@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\workspace\\MontandoTimes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\eposicaojogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\eposicaojogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EPosicaoJogador.cs",
+              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\EPosicaoJogador.cs",
+              "RelativeDocumentMoniker": "Entidades\\EPosicaoJogador.cs",
+              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\EPosicaoJogador.cs",
+              "RelativeToolTip": "Entidades\\EPosicaoJogador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T19:10:58.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\workspace\\MontandoTimes\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwEUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T13:32:07.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormacaoTime.cs",
+              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTime.cs",
+              "RelativeDocumentMoniker": "Entidades\\FormacaoTime.cs",
+              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTime.cs",
+              "RelativeToolTip": "Entidades\\FormacaoTime.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T13:41:38.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Time.cs",
+              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
+              "RelativeDocumentMoniker": "Entidades\\Time.cs",
+              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
+              "RelativeToolTip": "Entidades\\Time.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwEoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T13:35:05.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Jogador.cs",
+              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\Jogador.cs",
+              "RelativeDocumentMoniker": "Entidades\\Jogador.cs",
+              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Jogador.cs",
+              "RelativeToolTip": "Entidades\\Jogador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T13:33:15.07Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
