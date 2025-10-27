@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\workspace\\MontandoTimes\\",
+  "WorkspaceRootPath": "C:\\Users\\fmsmorais\\source\\repos\\projetos\\MontandoTime\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\users\\fmsmorais\\source\\repos\\projetos\\montandotime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\users\\fmsmorais\\source\\repos\\projetos\\montandotime\\entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\eposicaojogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\eposicaojogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,187 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 27,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{80454082-9ab8-47d4-af23-82bf6739e2a9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{80454082-9ab8-47d4-af23-82bf6739e2a9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1613416671:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:254354193:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EPosicaoJogador.cs",
-              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\EPosicaoJogador.cs",
-              "RelativeDocumentMoniker": "Entidades\\EPosicaoJogador.cs",
-              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\EPosicaoJogador.cs",
-              "RelativeToolTip": "Entidades\\EPosicaoJogador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Time.cs",
+              "DocumentMoniker": "C:\\Users\\fmsmorais\\source\\repos\\projetos\\MontandoTime\\Entidades\\Time.cs",
+              "RelativeDocumentMoniker": "Entidades\\Time.cs",
+              "ToolTip": "C:\\Users\\fmsmorais\\source\\repos\\projetos\\MontandoTime\\Entidades\\Time.cs",
+              "RelativeToolTip": "Entidades\\Time.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAIAwwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T19:10:58.891Z",
+              "WhenOpened": "2025-10-27T11:44:29.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\fmsmorais\\source\\repos\\projetos\\MontandoTime\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\workspace\\MontandoTimes\\Program.cs",
+              "ToolTip": "C:\\Users\\fmsmorais\\source\\repos\\projetos\\MontandoTime\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAiwEUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:32:07.013Z",
+              "WhenOpened": "2025-10-27T11:42:40.318Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 241,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormacaoTime.cs",
-              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTime.cs",
-              "RelativeDocumentMoniker": "Entidades\\FormacaoTime.cs",
-              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTime.cs",
-              "RelativeToolTip": "Entidades\\FormacaoTime.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:41:38.028Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Time.cs",
-              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
-              "RelativeDocumentMoniker": "Entidades\\Time.cs",
-              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
-              "RelativeToolTip": "Entidades\\Time.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAmwEoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:35:05.236Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Jogador.cs",
-              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\Jogador.cs",
-              "RelativeDocumentMoniker": "Entidades\\Jogador.cs",
-              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Jogador.cs",
-              "RelativeToolTip": "Entidades\\Jogador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:33:15.07Z"
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }

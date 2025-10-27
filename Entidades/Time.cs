@@ -20,11 +20,19 @@ namespace MontandoTimes.Entidades
             QuantidadeJogadores = posisaoJogaroes.Count;
         }
 
-        public void EscolherJogador(List<IJogador> jogadores, EPosicaoJogador posicaoJogador)
+        public void EscolherJogador(List<IJogador> jogadores)
         {
-            foreach(var posicao in PosicoesJogadores)
-            {
-                
+
+            var qtdJogaresPorTime = 7;
+            double qtdTimesPossiveis = (double)jogadores.Count / qtdJogaresPorTime;
+            double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * qtdJogaresPorTime, 1);
+            var qtdGoleiros = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).Count();
+            
+            if ( qtdGoleiros < (int)qtdTimesPossiveis )
+                 Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
+
+            foreach (var posicao in PosicoesJogadores)
+            {                
                 var jogadoresEscolhidos = jogadores.Where(jogador => jogador.Posicao == posicao).ToList();
                 var randon = new Random().NextDouble() * 5.0;
 
@@ -43,34 +51,8 @@ namespace MontandoTimes.Entidades
 
                 SetaJogador(jogador, posicao);
                 jogadores?.Remove(jogador);
-                //var lateraisDireito = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.LateralDireito).ToList();
-                //var lateraisEsquerdo = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.LateralEsquerdo).ToList();
-                //var zagueirosDireito = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.ZagueiroDireito).ToList();
-                //var zagueirosEsquerdo = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.ZagueiroEsquerdo).ToList();
-                //var volantes = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.Volante).ToList();
-                //var meiaDireita = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.MeiaDireita).ToList();
-                //var meiaEsquerda = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.MeiaEsquerda).ToList();
-                //var meiaAtacante = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.MeiaAtacante).ToList();
-                //var pontaDireita = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.PontaDireita).ToList();
-                //var pontaEsquerda = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.PontaEsquerda).ToList();
-                //var centroavantes = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.Centroavante).ToList();
+                               
             }
-
-            //var randon = new Random().NextDouble() * 5.0;
-
-            //var jogador = (Jogador?)(jogadores?
-            //    .Where(jogador => jogador.Posicao == posicaoJogador)
-            //    .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
-            //    .FirstOrDefault());
-
-            //if (jogador is null)
-            //    jogador = (Jogador?)(naoDefinido?
-            //    .Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido)
-            //    .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
-            //    .FirstOrDefault());
-
-            //SetaJogador(jogador, posicaoJogador);
-            //jogadores?.Remove(jogador);
 
         }
 

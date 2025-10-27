@@ -40,6 +40,7 @@ var jogadores = new List<IJogador>
 
         new Jogador { Nome = "Balbo", Posicao = EPosicaoJogador.NaoDefinido, Experiencia = 1.5 },
         new Jogador { Nome = "Canela", Posicao = EPosicaoJogador.NaoDefinido, Experiencia = 1.7 },
+        new Jogador { Nome = "Canela de Taça", Posicao = EPosicaoJogador.NaoDefinido, Experiencia = 2.7 },
         
 
 };
@@ -66,26 +67,14 @@ var times = new List<Time>()
     }),
 };
 
-
-foreach(var time in times)
-{
-   // time.Formacao = new FormacaoTime();
-    time.EscolherJogador(jogadores, EPosicaoJogador.Goleiro);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.Centroavante);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.LateralDireito);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.LateralEsquerdo);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.MeiaAtacante);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.MeiaDireita);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.MeiaEsquerda);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.PontaDireita);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.PontaEsquerda);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.Volante);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.ZagueiroDireito);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.ZagueiroEsquerdo);
-    //time.EscolherJogador(jogadores, EPosicaoJogador.NaoDefinido);
+var qtdJogaresPorTime = 7;
+double qtdTimesPossiveis = (double)jogadores.Count / qtdJogaresPorTime;
+double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * qtdJogaresPorTime, 1);
 
 
-    Console.WriteLine(time.Nome);
+foreach (var time in times)
+{   
+    time.EscolherJogador(jogadores); 
 }
 
 
