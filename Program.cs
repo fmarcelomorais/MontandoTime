@@ -1,5 +1,6 @@
 ﻿
 using MontandoTimes.Entidades;
+using MontandoTimes.Utils;
 
 var jogadores = new List<IJogador>
 {
@@ -44,33 +45,22 @@ var jogadores = new List<IJogador>
         
 
 };
-
-var times = new List<Time>()
+var posicoesJogadore = new List<EPosicaoJogador>
 {
-    new Time("Time A", new List<EPosicaoJogador>
-    { 
-        EPosicaoJogador.Goleiro,
-        EPosicaoJogador.ZagueiroDireito,
-        EPosicaoJogador.ZagueiroEsquerdo,
-        EPosicaoJogador.LateralDireito,
-        EPosicaoJogador.LateralEsquerdo,
-        EPosicaoJogador.MeiaAtacante
-    }),
-    new Time("Time B", new List<EPosicaoJogador>
-    {
-        EPosicaoJogador.Goleiro,
-        EPosicaoJogador.ZagueiroDireito,
-        EPosicaoJogador.ZagueiroEsquerdo,
-        EPosicaoJogador.LateralDireito,
-        EPosicaoJogador.LateralEsquerdo,
-        EPosicaoJogador.MeiaAtacante
-    }),
+    EPosicaoJogador.ZagueiroDireito,
+    EPosicaoJogador.ZagueiroEsquerdo,
+    EPosicaoJogador.LateralDireito,
+    EPosicaoJogador.LateralEsquerdo,
+    EPosicaoJogador.MeiaAtacante
 };
+var times = new List<Time>();
 
-var qtdJogaresPorTime = 7;
-double qtdTimesPossiveis = (double)jogadores.Count / qtdJogaresPorTime;
-double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * qtdJogaresPorTime, 1);
+var qtdTimes = Ultilitarios.QuantidadeDeTimes(jogadores, posicoesJogadore);
 
+for (var i =0; i < qtdTimes; i++)
+{
+    times.Add(new Time($" {i+1}", posicoesJogadore));
+}
 
 foreach (var time in times)
 {   

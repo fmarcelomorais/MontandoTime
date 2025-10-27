@@ -8,28 +8,30 @@ namespace MontandoTimes.Entidades
 {
     public class Time
     {
-        public string Nome { get; set; } = string.Empty;
-        public int QuantidadeJogadores { get; set; } = 5;
+        public string Nome { get; set; } = "Time: ";
+        public int QuantidadeJogadores { get; set; }
         public FormacaoTime Formacao { get; set; } = new FormacaoTime();
         public List<EPosicaoJogador> PosicoesJogadores { get; set; } = new List<EPosicaoJogador>();
 
         public Time(string nomeTime, List<EPosicaoJogador> posisaoJogaroes)
         {
-            Nome = nomeTime;
+            //posisaoJogaroes.Add(EPosicaoJogador.Goleiro);
+            Nome += nomeTime;
             PosicoesJogadores = posisaoJogaroes;
             QuantidadeJogadores = posisaoJogaroes.Count;
         }
 
         public void EscolherJogador(List<IJogador> jogadores)
         {
-
-            var qtdJogaresPorTime = 7;
-            double qtdTimesPossiveis = (double)jogadores.Count / qtdJogaresPorTime;
-            double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * qtdJogaresPorTime, 1);
+       
+            double qtdTimesPossiveis = (double)jogadores.Count / QuantidadeJogadores;
+            double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * QuantidadeJogadores, 1);
             var qtdGoleiros = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).Count();
             
-            if ( qtdGoleiros < (int)qtdTimesPossiveis )
+            if ( qtdGoleiros < (int)qtdTimesPossiveis)
+            {
                  Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
+            }
 
             foreach (var posicao in PosicoesJogadores)
             {                
