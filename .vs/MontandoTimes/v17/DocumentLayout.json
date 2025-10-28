@@ -68,9 +68,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\workspace\\MontandoTimes\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAmwDUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\workspace\\MontandoTimes\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:32:07.013Z",
               "EditorCaption": ""
@@ -83,7 +83,7 @@
               "RelativeDocumentMoniker": "Entidades\\FormacaoTime.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTime.cs",
               "RelativeToolTip": "Entidades\\FormacaoTime.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:41:38.028Z",
               "EditorCaption": ""
@@ -96,7 +96,7 @@
               "RelativeDocumentMoniker": "Entidades\\Time.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
               "RelativeToolTip": "Entidades\\Time.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAIwBsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:35:05.236Z",
               "EditorCaption": ""

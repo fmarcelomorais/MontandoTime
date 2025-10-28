@@ -1,16 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\workspace\\MontandoTimes\\",
+  "WorkspaceRootPath": "D:\\Curso de C#\\MontandoTime\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|d:\\curso de c#\\montandotime\\entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +22,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\utils\\ultilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:utils\\ultilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|d:\\curso de c#\\montandotime\\entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|d:\\curso de c#\\montandotime\\entidades\\interfaces\\iformacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\interfaces\\iformacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|d:\\curso de c#\\montandotime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 719b8cb6c56345b1ac450e9666a0dd5dc562ae5c
     }
   ],
   "DocumentGroupContainers": [
@@ -38,6 +47,7 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "FormacaoTimeRacha.cs",
               "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTimeRacha.cs",
@@ -70,7 +80,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAmwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:32:07.013Z",
               "EditorCaption": ""
@@ -86,32 +96,69 @@
               "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:41:38.028Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "IFormacaoTime.cs",
+              "DocumentMoniker": "D:\\Curso de C#\\MontandoTime\\Entidades\\Interfaces\\IFormacaoTime.cs",
+              "RelativeDocumentMoniker": "Entidades\\Interfaces\\IFormacaoTime.cs",
+              "ToolTip": "D:\\Curso de C#\\MontandoTime\\Entidades\\Interfaces\\IFormacaoTime.cs",
+              "RelativeToolTip": "Entidades\\Interfaces\\IFormacaoTime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T00:42:24.928Z",
+>>>>>>> 719b8cb6c56345b1ac450e9666a0dd5dc562ae5c
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "Time.cs",
               "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
               "RelativeDocumentMoniker": "Entidades\\Time.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
               "RelativeToolTip": "Entidades\\Time.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAIwBsAAAAIAAAAAAAAAA==",
+=======
+              "Title": "FormacaoTime.cs",
+              "DocumentMoniker": "D:\\Curso de C#\\MontandoTime\\Entidades\\FormacaoTime.cs",
+              "RelativeDocumentMoniker": "Entidades\\FormacaoTime.cs",
+              "ToolTip": "D:\\Curso de C#\\MontandoTime\\Entidades\\FormacaoTime.cs",
+              "RelativeToolTip": "Entidades\\FormacaoTime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+>>>>>>> 719b8cb6c56345b1ac450e9666a0dd5dc562ae5c
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:35:05.236Z",
+              "WhenOpened": "2025-10-28T00:22:39.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Jogador.cs",
-              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\Jogador.cs",
-              "RelativeDocumentMoniker": "Entidades\\Jogador.cs",
-              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Jogador.cs",
-              "RelativeToolTip": "Entidades\\Jogador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Time.cs",
+              "DocumentMoniker": "D:\\Curso de C#\\MontandoTime\\Entidades\\Time.cs",
+              "RelativeDocumentMoniker": "Entidades\\Time.cs",
+              "ToolTip": "D:\\Curso de C#\\MontandoTime\\Entidades\\Time.cs",
+              "RelativeToolTip": "Entidades\\Time.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAiwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-10-26T13:33:15.07Z",
+=======
+              "WhenOpened": "2025-10-28T00:07:27.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Curso de C#\\MontandoTime\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Curso de C#\\MontandoTime\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T23:27:32.091Z",
+>>>>>>> 719b8cb6c56345b1ac450e9666a0dd5dc562ae5c
               "EditorCaption": ""
             }
           ]

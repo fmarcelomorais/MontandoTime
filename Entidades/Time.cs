@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MontandoTimes.Entidades.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,10 +32,10 @@ namespace MontandoTimes.Entidades
             double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * QuantidadeJogadores, 1);
             var qtdGoleiros = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).Count();
             
-            if ( qtdGoleiros < (int)qtdTimesPossiveis)
-            {
-                 Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
-            }
+            //if ( qtdGoleiros < (int)qtdTimesPossiveis)
+            //{
+            //     Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
+            //}
 
             var indice = 1;
             foreach (var posicao in PosicoesJogadores)
