@@ -18,5 +18,18 @@ namespace MontandoTimes.Utils
 
             return (int)qtdTimesPossiveis;
         }
+
+        public static bool TemPropriedadesNulas<T>(T time)
+        {
+            foreach (var prop in time.GetType().GetProperties())
+            {
+                var valor = prop.GetValue(time);
+                if (valor == null)
+                    return true;
+                return false;
+            }
+            return false;
+
+        }
     }
 }

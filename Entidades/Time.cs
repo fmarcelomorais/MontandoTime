@@ -10,12 +10,15 @@ namespace MontandoTimes.Entidades
     {
         public string Nome { get; set; } = "Time: ";
         public int QuantidadeJogadores { get; set; }
+        private bool Racha { get; set; } = false;
         public FormacaoTime Formacao { get; set; } = new FormacaoTime();
+        public FormacaoTimeRacha FormacaoRacha { get; set; } = new FormacaoTimeRacha();
         public List<EPosicaoJogador> PosicoesJogadores { get; set; } = new List<EPosicaoJogador>();
 
-        public Time(string nomeTime, List<EPosicaoJogador> posisaoJogaroes)
+        public Time(string nomeTime, List<EPosicaoJogador> posisaoJogaroes, bool racha=true)
         {
             //posisaoJogaroes.Add(EPosicaoJogador.Goleiro);
+            Racha = racha;
             Nome += nomeTime;
             PosicoesJogadores = posisaoJogaroes;
             QuantidadeJogadores = posisaoJogaroes.Count;
@@ -33,6 +36,7 @@ namespace MontandoTimes.Entidades
                  Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
             }
 
+            var indice = 1;
             foreach (var posicao in PosicoesJogadores)
             {                
                 var jogadoresEscolhidos = jogadores.Where(jogador => jogador.Posicao == posicao).ToList();
@@ -43,28 +47,50 @@ namespace MontandoTimes.Entidades
                     .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
                     .FirstOrDefault());
 
-                var naoDefinido = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).ToList();
+                var jogadoresRacha = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).ToList();
 
                 if (jogador is null)
-                    jogador = (Jogador?)(naoDefinido?
+                    jogador = (Jogador?)(jogadoresRacha?
                     .Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido)
                     .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
                     .FirstOrDefault());
 
-                SetaJogador(jogador, posicao);
+
+                if (Racha)
+                {
+                    var jogadorRacha = (Jogador?)(jogadoresRacha?
+                    .Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido)
+                    .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
+                    .FirstOrDefault());
+                    
+                    SetaFormacaoRacha(jogadorRacha, indice);
+                    indice++;
+                    
+                }
+                else
+                {
+
+                    SetaFormacao(jogador, posicao);
+                }
+
                 jogadores?.Remove(jogador);
                                
             }
 
         }
 
-        private void SetaJogador(Jogador jogador, EPosicaoJogador posicaoJogador)
+ 
+        
+        private void SetaFormacaoRacha(IJogador jogador, int i)
         {
-
+            FormacaoRacha.GetType().GetProperty($"Jogador{i}")?.SetValue(FormacaoRacha, jogador);
+        }
+        private void SetaFormacao(Jogador jogador, EPosicaoJogador posicaoJogador)
+        {
             if (posicaoJogador == EPosicaoJogador.Goleiro)
                 Formacao.Goleiro = jogador;
             if (posicaoJogador == EPosicaoJogador.LateralDireito)
-               Formacao.LateralDireito = jogador;
+                Formacao.LateralDireito = jogador;
             if (posicaoJogador == EPosicaoJogador.LateralEsquerdo)
                 Formacao.LateralEsquerdo = jogador;
             if (posicaoJogador == EPosicaoJogador.ZagueiroEsquerdo)

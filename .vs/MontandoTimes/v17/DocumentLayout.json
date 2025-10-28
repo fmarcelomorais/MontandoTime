@@ -11,16 +11,20 @@
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\utils\\ultilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:utils\\ultilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\formacaotime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\formacaotimeracha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\formacaotimeracha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|c:\\workspace\\montandotimes\\utils\\ultilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56ED1346-0DF1-4CFE-9B77-616F2C53F438}|MontandoTimes.csproj|solutionrelative:utils\\ultilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +34,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "FormacaoTimeRacha.cs",
+              "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTimeRacha.cs",
+              "RelativeDocumentMoniker": "Entidades\\FormacaoTimeRacha.cs",
+              "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTimeRacha.cs",
+              "RelativeToolTip": "Entidades\\FormacaoTimeRacha.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T01:45:44.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Ultilitarios.cs",
               "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Utils\\Ultilitarios.cs",
               "RelativeDocumentMoniker": "Utils\\Ultilitarios.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Utils\\Ultilitarios.cs",
               "RelativeToolTip": "Utils\\Ultilitarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T16:59:41.571Z",
               "EditorCaption": ""
@@ -53,20 +70,20 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAEIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:32:07.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FormacaoTime.cs",
               "DocumentMoniker": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTime.cs",
               "RelativeDocumentMoniker": "Entidades\\FormacaoTime.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\FormacaoTime.cs",
               "RelativeToolTip": "Entidades\\FormacaoTime.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAGIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:41:38.028Z",
               "EditorCaption": ""
@@ -79,7 +96,7 @@
               "RelativeDocumentMoniker": "Entidades\\Time.cs",
               "ToolTip": "C:\\workspace\\MontandoTimes\\Entidades\\Time.cs",
               "RelativeToolTip": "Entidades\\Time.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwBsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:35:05.236Z",
               "EditorCaption": ""
@@ -94,7 +111,8 @@
               "RelativeToolTip": "Entidades\\Jogador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:33:15.07Z"
+              "WhenOpened": "2025-10-26T13:33:15.07Z",
+              "EditorCaption": ""
             }
           ]
         }
