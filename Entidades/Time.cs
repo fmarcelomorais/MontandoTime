@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MontandoTimes.Entidades.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,8 @@ namespace MontandoTimes.Entidades
     {
         public string Nome { get; set; } = "Time: ";
         public int QuantidadeJogadores { get; set; }
-        public FormacaoTime Formacao { get; set; } = new FormacaoTime();
+        public FormacaoTime Formacao { get; set; }
+        public FormacaoTimeRacha FormacaoTimeRacha { get; set; }
         public List<EPosicaoJogador> PosicoesJogadores { get; set; } = new List<EPosicaoJogador>();
 
         public Time(string nomeTime, List<EPosicaoJogador> posisaoJogaroes)
@@ -28,10 +30,10 @@ namespace MontandoTimes.Entidades
             double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * QuantidadeJogadores, 1);
             var qtdGoleiros = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).Count();
             
-            if ( qtdGoleiros < (int)qtdTimesPossiveis)
-            {
-                 Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
-            }
+            //if ( qtdGoleiros < (int)qtdTimesPossiveis)
+            //{
+            //     Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
+            //}
 
             foreach (var posicao in PosicoesJogadores)
             {                
@@ -58,11 +60,44 @@ namespace MontandoTimes.Entidades
 
         }
 
-        private void SetaJogador(Jogador jogador, EPosicaoJogador posicaoJogador)
+        private void SetaJogador(Jogador jogador, EPosicaoJogador posicaoJogador, string tipo)
         {
+            if (tipo.Equals("racha"))
+            {
+                FormacaoTimeRacha = new FormacaoTimeRacha();
+             
+                if(FormacaoTimeRacha.NaoDefinido1 == null)
+                    FormacaoTimeRacha.NaoDefinido1 = jogador;
+                  
+                if(FormacaoTimeRacha.NaoDefinido2 == null)
+                    FormacaoTimeRacha.NaoDefinido2 = jogador;
 
-            if (posicaoJogador == EPosicaoJogador.Goleiro)
-                Formacao.Goleiro = jogador;
+                if (FormacaoTimeRacha.NaoDefinido3 == null)
+                    FormacaoTimeRacha.NaoDefinido3 = jogador;
+
+                if (FormacaoTimeRacha.NaoDefinido4 == null)
+                    FormacaoTimeRacha.NaoDefinido4 = jogador;
+
+                if (FormacaoTimeRacha.NaoDefinido5 == null)
+                    FormacaoTimeRacha.NaoDefinido5 = jogador;
+
+                if (FormacaoTimeRacha.NaoDefinido6 == null)
+                    FormacaoTimeRacha.NaoDefinido6 = jogador;
+
+                if (FormacaoTimeRacha.NaoDefinido7 == null)
+                    FormacaoTimeRacha.NaoDefinido7 = jogador;
+
+                if (FormacaoTimeRacha.NaoDefinido8 == null)
+                    FormacaoTimeRacha.NaoDefinido8 = jogador;
+
+
+            }
+
+            Formacao = new FormacaoTime();
+            //if (posicaoJogador == EPosicaoJogador.Goleiro)
+            //  Formacao.Goleiro = jogador;
+            if (posicaoJogador == EPosicaoJogador.NaoDefinido)
+                Formacao.NaoDefinido = jogador;
             if (posicaoJogador == EPosicaoJogador.LateralDireito)
                Formacao.LateralDireito = jogador;
             if (posicaoJogador == EPosicaoJogador.LateralEsquerdo)
