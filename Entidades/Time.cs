@@ -25,52 +25,45 @@ namespace MontandoTimes.Entidades
             QuantidadeJogadores = posisaoJogaroes.Count;
         }
 
-        public void EscolherJogador(List<IJogador> jogadores)
-        {
-       
-            double qtdTimesPossiveis = (double)jogadores.Count / QuantidadeJogadores;
-            double qtdJogaresNãoAlocados = Math.Round((qtdTimesPossiveis - Math.Truncate(qtdTimesPossiveis)) * QuantidadeJogadores, 1);
-            var qtdGoleiros = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).Count();
-            
-            //if ( qtdGoleiros < (int)qtdTimesPossiveis)
-            //{
-            //     Console.WriteLine("Não é possivel montar todos os times pois não há goleiros suficiente");
-            //}
-
+        public void EscalarTime(List<IJogador> jogadores)
+        {     
+ 
             var indice = 1;
             foreach (var posicao in PosicoesJogadores)
-            {                
-                var jogadoresEscolhidos = jogadores.Where(jogador => jogador.Posicao == posicao).ToList();
-                var randon = new Random().NextDouble() * 5.0;
+            {
 
-                var jogador = (Jogador?)(jogadores?
-                    .Where(jogador => jogador.Posicao == posicao)
-                    .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
-                    .FirstOrDefault());
-
-                var jogadoresRacha = jogadores.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).ToList();
-
-                if (jogador is null)
-                    jogador = (Jogador?)(jogadoresRacha?
-                    .Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido)
-                    .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
-                    .FirstOrDefault());
-
+                double experiencia = 2.5;
+                Jogador? jogador = new Jogador();
 
                 if (Racha)
                 {
-                    var jogadorRacha = (Jogador?)(jogadoresRacha?
-                    .Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido)
-                    .OrderBy(jogador => Math.Abs(jogador.Experiencia - randon))
-                    .FirstOrDefault());
-                    
+                    experiencia =  new Random().NextDouble() * 5.0;                    
+
+                    var jogadorRacha = (Jogador?)(jogadores?
+                                        .Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido)
+                                        .OrderBy(jogador => Math.Abs(jogador.Experiencia - experiencia))
+                                        .FirstOrDefault());
+
                     SetaFormacaoRacha(jogadorRacha, indice);
                     indice++;
                     
                 }
                 else
                 {
+                   
+                     jogador = (Jogador?)(jogadores?
+                                    .Where(jogador => jogador.Posicao == posicao)
+                                    .OrderBy(jogador => Math.Abs(jogador.Experiencia - experiencia))
+                                    .FirstOrDefault());
 
+                    var jogadoresPosicoesNaoDefinida = jogadores?.Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido).ToList();
+
+                    if (jogador is null)
+
+                        jogador = (Jogador?)(jogadoresPosicoesNaoDefinida?
+                                    .Where(jogador => jogador.Posicao == EPosicaoJogador.NaoDefinido)
+                                    .OrderBy(jogador => Math.Abs(jogador.Experiencia - experiencia))
+                                    .FirstOrDefault());
                     SetaFormacao(jogador, posicao);
                 }
 
@@ -78,10 +71,7 @@ namespace MontandoTimes.Entidades
                                
             }
 
-        }
-
- 
-        
+        } 
         private void SetaFormacaoRacha(IJogador jogador, int i)
         {
             FormacaoRacha.GetType().GetProperty($"Jogador{i}")?.SetValue(FormacaoRacha, jogador);
@@ -113,20 +103,39 @@ namespace MontandoTimes.Entidades
             if (posicaoJogador == EPosicaoJogador.Volante)
                 Formacao.Volante = jogador;
         }
-
-        private void TemPropriedadesNulas(Jogador jogador)
+        private bool TemPropriedadesNulas(Jogador jogador)
         {
-            foreach (var prop in this.GetType().GetProperties())
-            {
-                var valor = prop.GetValue(this);
-                if (valor == null)
-                {
-                    prop.SetValue(jogador, jogador);
-                    break;
-                }
-            }
+            if (jogador is null) 
+                return false;
+            return true;
 
         }
+        public void MostrarEscalacaoTime()
+        {
+            Console.WriteLine($"TIME: {Nome}\n");
 
+            if(Racha)
+            {
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador1)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador1.Nome} - Posição: {FormacaoRacha.Jogador1.Posicao.ToString()} - Experiencia: {FormacaoRacha?.Jogador1.Experiencia}");
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador2)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador2.Nome} - Posição: {FormacaoRacha.Jogador2.Posicao.ToString()} - Experiencia: {FormacaoRacha?.Jogador2.Experiencia}");
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador3)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador3.Nome} - Posição: {FormacaoRacha.Jogador3.Posicao.ToString()} - Experiencia: {FormacaoRacha?.Jogador3.Experiencia}");
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador4)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador4.Nome} - Posição: {FormacaoRacha.Jogador4.Posicao.ToString()} - Experiencia: {FormacaoRacha?.Jogador4.Experiencia}");
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador5)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador5.Nome} - Posição: {FormacaoRacha.Jogador5.Posicao.ToString()} - Experiencia: {FormacaoRacha?.Jogador5.Experiencia}");
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador6)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador6.Nome} - Posição: {FormacaoRacha.Jogador6.Posicao.ToString()} - Experiencia: {FormacaoRacha?.Jogador6.Experiencia}");
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador7)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador7.Nome} - Posição: {FormacaoRacha.Jogador7.Posicao.ToString()} - Experiencia: {FormacaoRacha?.Jogador7.Experiencia}");
+               if(TemPropriedadesNulas(FormacaoRacha.Jogador8)) 
+                    Console.WriteLine($"JOGADOR: {FormacaoRacha?.Jogador8.Nome} - Posição: {FormacaoRacha.Jogador8.Posicao.ToString()} - Experiencia: {FormacaoRacha.Jogador8.Experiencia}");
+                
+                Console.WriteLine($"------------------------------------------------------");
+            }
+            
+        }
     }
 }
