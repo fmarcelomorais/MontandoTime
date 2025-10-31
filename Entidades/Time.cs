@@ -77,30 +77,65 @@ namespace MontandoTimes.Entidades
             FormacaoRacha.GetType().GetProperty($"Jogador{i}")?.SetValue(FormacaoRacha, jogador);
         }
         private void SetaFormacao(Jogador jogador, EPosicaoJogador posicaoJogador)
+        ica{
+            if (posicaoJogador == EPosicaoJogador.NaoDefinido)
+                SetFormacaoAleatoria(jogador);
+            else
+            {
+                if (posicaoJogador == EPosicaoJogador.Goleiro)
+                    Formacao.Goleiro = jogador;
+                if (posicaoJogador == EPosicaoJogador.LateralDireito)
+                    Formacao.LateralDireito = jogador;
+                if (posicaoJogador == EPosicaoJogador.LateralEsquerdo)
+                    Formacao.LateralEsquerdo = jogador;
+                if (posicaoJogador == EPosicaoJogador.ZagueiroEsquerdo)
+                    Formacao.ZagueiroEsquerdo = jogador;
+                if (posicaoJogador == EPosicaoJogador.ZagueiroDireito)
+                    Formacao.ZagueiroDireito = jogador;
+                if (posicaoJogador == EPosicaoJogador.PontaEsquerda)
+                    Formacao.PontaEsquerda = jogador;
+                if (posicaoJogador == EPosicaoJogador.PontaDireita)
+                    Formacao.PontaDireita = jogador;
+                if (posicaoJogador == EPosicaoJogador.Centroavante)
+                    Formacao.Centroavante = jogador;
+                if (posicaoJogador == EPosicaoJogador.MeiaAtacante)
+                    Formacao.MeiaAtacante = jogador;
+                if (posicaoJogador == EPosicaoJogador.MeiaDireita)
+                    Formacao.MeiaDireita = jogador;
+                if (posicaoJogador == EPosicaoJogador.MeiaEsquerda)
+                    Formacao.MeiaEsquerda = jogador;
+                if (posicaoJogador == EPosicaoJogador.Volante)
+                    Formacao.Volante = jogador;
+            }
+        }
+
+        private void SetFormacaoAleatoria(Jogador jogador)
         {
-            if (posicaoJogador == EPosicaoJogador.Goleiro)
+            var randon = new Random().Next(0, 11);
+
+            if (randon == EPosicaoJogador.Goleiro.GetHashCode())
                 Formacao.Goleiro = jogador;
-            if (posicaoJogador == EPosicaoJogador.LateralDireito)
+            if (randon == EPosicaoJogador.LateralDireito.GetHashCode())
                 Formacao.LateralDireito = jogador;
-            if (posicaoJogador == EPosicaoJogador.LateralEsquerdo)
+            if (randon == EPosicaoJogador.LateralEsquerdo.GetHashCode())
                 Formacao.LateralEsquerdo = jogador;
-            if (posicaoJogador == EPosicaoJogador.ZagueiroEsquerdo)
+            if (randon == EPosicaoJogador.ZagueiroEsquerdo.GetHashCode())
                 Formacao.ZagueiroEsquerdo = jogador;
-            if (posicaoJogador == EPosicaoJogador.ZagueiroDireito)
+            if (randon == EPosicaoJogador.ZagueiroDireito.GetHashCode())
                 Formacao.ZagueiroDireito = jogador;
-            if (posicaoJogador == EPosicaoJogador.PontaEsquerda)
+            if (randon == EPosicaoJogador.PontaEsquerda.GetHashCode())
                 Formacao.PontaEsquerda = jogador;
-            if (posicaoJogador == EPosicaoJogador.PontaDireita)
+            if (randon == EPosicaoJogador.PontaDireita.GetHashCode())
                 Formacao.PontaDireita = jogador;
-            if (posicaoJogador == EPosicaoJogador.Centroavante)
+            if (randon == EPosicaoJogador.Centroavante.GetHashCode())
                 Formacao.Centroavante = jogador;
-            if (posicaoJogador == EPosicaoJogador.MeiaAtacante)
+            if (randon == EPosicaoJogador.MeiaAtacante.GetHashCode())
                 Formacao.MeiaAtacante = jogador;
-            if (posicaoJogador == EPosicaoJogador.MeiaDireita)
+            if (randon == EPosicaoJogador.MeiaDireita.GetHashCode())
                 Formacao.MeiaDireita = jogador;
-            if (posicaoJogador == EPosicaoJogador.MeiaEsquerda)
+            if (randon == EPosicaoJogador.MeiaEsquerda.GetHashCode())
                 Formacao.MeiaEsquerda = jogador;
-            if (posicaoJogador == EPosicaoJogador.Volante)
+            if (randon == EPosicaoJogador.Volante.GetHashCode())
                 Formacao.Volante = jogador;
         }
         private bool TemPropriedadesNulas(Jogador jogador)
