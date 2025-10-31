@@ -77,7 +77,7 @@ namespace MontandoTimes.Entidades
             FormacaoRacha.GetType().GetProperty($"Jogador{i}")?.SetValue(FormacaoRacha, jogador);
         }
         private void SetaFormacao(Jogador jogador, EPosicaoJogador posicaoJogador)
-        ica{
+        {
             if (posicaoJogador == EPosicaoJogador.NaoDefinido)
                 SetFormacaoAleatoria(jogador);
             else
