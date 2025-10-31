@@ -19,10 +19,10 @@ namespace MontandoTimes.Entidades
         public Time(string nomeTime, List<EPosicaoJogador> posisaoJogaroes, bool racha=true)
         {
             //posisaoJogaroes.Add(EPosicaoJogador.Goleiro);
-            Racha = racha;
             Nome += nomeTime;
             PosicoesJogadores = posisaoJogaroes;
             QuantidadeJogadores = posisaoJogaroes.Count;
+            Racha = QuantidadeJogadores < 8 ? true : false;
         }
 
         public void EscalarTime(List<IJogador> jogadores)
@@ -46,7 +46,7 @@ namespace MontandoTimes.Entidades
 
                     SetaFormacaoRacha(jogadorRacha, indice);
                     indice++;
-                    
+                    jogador = jogadorRacha;
                 }
                 else
                 {
@@ -135,6 +135,37 @@ namespace MontandoTimes.Entidades
                 
                 Console.WriteLine($"------------------------------------------------------");
             }
+            else
+            {
+
+                if (TemPropriedadesNulas(Formacao.Goleiro))
+                    Console.WriteLine($"JOGADOR: {Formacao?.Goleiro.Nome} - Posição: {Formacao?.Goleiro.Posicao.ToString()} - Experiencia: {Formacao?.Goleiro.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.ZagueiroDireito))
+                    Console.WriteLine($"JOGADOR: {Formacao?.ZagueiroDireito.Nome} - Posição: {Formacao?.ZagueiroDireito.Posicao.ToString()} - Experiencia: {Formacao?.ZagueiroDireito.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.ZagueiroEsquerdo))
+                    Console.WriteLine($"JOGADOR: {Formacao?.ZagueiroEsquerdo.Nome} - Posição: {Formacao?.ZagueiroEsquerdo.Posicao.ToString()} - Experiencia: {Formacao?.ZagueiroEsquerdo.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.LateralDireito))
+                    Console.WriteLine($"JOGADOR: {Formacao?.LateralDireito.Nome} - Posição: {Formacao?.LateralDireito.Posicao.ToString()} - Experiencia: {Formacao?.LateralDireito.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.LateralEsquerdo))
+                    Console.WriteLine($"JOGADOR: {Formacao?.LateralEsquerdo.Nome} - Posição: {Formacao?.LateralEsquerdo.Posicao.ToString()} - Experiencia: {Formacao?.LateralEsquerdo.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.MeiaDireita))
+                    Console.WriteLine($"JOGADOR: {Formacao?.MeiaDireita.Nome} - Posição: {Formacao?.MeiaDireita.Posicao.ToString()} - Experiencia: {Formacao?.MeiaAtacante.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.MeiaEsquerda))
+                    Console.WriteLine($"JOGADOR: {Formacao?.MeiaEsquerda.Nome} - Posição: {Formacao?.MeiaEsquerda.Posicao.ToString()} - Experiencia: {Formacao?.MeiaEsquerda.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.Volante))
+                    Console.WriteLine($"JOGADOR: {Formacao?.Volante.Nome} - Posição: {Formacao?.Volante.Posicao.ToString()} - Experiencia: {Formacao?.Volante.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.Centroavante))
+                    Console.WriteLine($"JOGADOR: {Formacao?.Centroavante.Nome} - Posição: {Formacao?.Centroavante.Posicao.ToString()} - Experiencia: {Formacao?.Centroavante.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.MeiaAtacante))
+                    Console.WriteLine($"JOGADOR: {Formacao?.MeiaAtacante.Nome} - Posição: {Formacao?.MeiaAtacante.Posicao.ToString()} - Experiencia: {Formacao?.MeiaAtacante.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.PontaDireita))
+                    Console.WriteLine($"JOGADOR: {Formacao?.PontaDireita.Nome} - Posição: {Formacao?.PontaDireita.Posicao.ToString()} - Experiencia: {Formacao?.PontaDireita.Experiencia}");
+                if (TemPropriedadesNulas(Formacao.PontaEsquerda))
+                    Console.WriteLine($"JOGADOR: {Formacao?.PontaEsquerda.Nome} - Posição: {Formacao?.PontaEsquerda.Posicao.ToString()} - Experiencia: {Formacao?.PontaEsquerda.Experiencia}");
+
+                Console.WriteLine($"------------------------------------------------------");
+            }
+
             
         }
     }

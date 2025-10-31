@@ -11,7 +11,8 @@ namespace MontandoTimes.Utils
     {
         public static int QuantidadeDeTimes(List<IJogador> jogadores, List<EPosicaoJogador> posicaoJogadore)
         {
-            if(!posicaoJogadore.Any(posicao => posicao == EPosicaoJogador.Goleiro))
+
+            if(!posicaoJogadore.Any(posicao => posicao == EPosicaoJogador.Goleiro) && posicaoJogadore.Count > 8)
                 posicaoJogadore.Add(EPosicaoJogador.Goleiro);
            
             double qtdTimesPossiveis = (double)jogadores.Count / posicaoJogadore.Count;

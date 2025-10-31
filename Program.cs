@@ -51,6 +51,11 @@ var posicoesJogadore = new List<EPosicaoJogador>
     EPosicaoJogador.NaoDefinido,
     EPosicaoJogador.NaoDefinido,
     EPosicaoJogador.NaoDefinido,
+    EPosicaoJogador.NaoDefinido,
+    EPosicaoJogador.NaoDefinido,
+    EPosicaoJogador.NaoDefinido,
+    EPosicaoJogador.NaoDefinido,
+    EPosicaoJogador.NaoDefinido
 };
 var times = new List<Time>();
 
@@ -58,7 +63,7 @@ var qtdTimes = Ultilitarios.QuantidadeDeTimes(jogadores, posicoesJogadore);
 
 for (var i =0; i < qtdTimes; i++)
 {
-    times.Add(new Time($" {i+1}", posicoesJogadore, false));
+    times.Add(new Time($" {i+1}", posicoesJogadore, true));
 }
 
 foreach (var time in times)
